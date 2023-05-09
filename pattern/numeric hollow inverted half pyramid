@@ -1,0 +1,22 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int N;
+   cin>>N;
+   int i, j;
+    // loop to print number from 1 to N
+    for (i = 0; i <N; i++) {
+        // For loop to display number upto i
+        for (j = i+1; j <= N; j++) {
+            if (j == i+1 || j == N || i == 0)
+                cout << j;
+            else
+                cout << "  ";
+        }
+        cout << endl;
+   }
+}
